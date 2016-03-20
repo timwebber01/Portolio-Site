@@ -1,0 +1,111 @@
+/*!
+ * Fonts
+ */
+
+$font-stack: 'brandon', 'Helvetica Neue', 'sans-serif';
+
+@font-face {
+    font-family: 'brandon';
+    src: url(../fonts/BrandonText-Regular.otf);
+    font-weight: regular;
+}
+
+@font-face {
+    font-family: 'brandon';
+    src: url(../fonts/BrandonText-Bold.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'brandon';
+    src: url(../fonts/BrandonText-Medium.otf);
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: 'brandon';
+    src: url(../fonts/BrandonText-Light.otf);
+    font-weight: light;
+}
+
+body {
+  font-family: $font-stack;
+}
+
+/*!
+ * Colors
+ */
+$mainbackground: #333;
+$blackparagraph: #262626;
+
+/*!
+ * Text
+ */
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: medium;
+    line-height: 1.1;
+    display: block;
+    margin: 10px 0 0;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.1;
+    color: $blackparagraph;
+}
+
+p.blackp {
+    color: $blackparagraph;
+    font-weight: medium;
+}
+
+/*!
+ * Header
+ */
+.intro-header {
+  background-color: #808080;
+  background: no-repeat center center;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.intro-header .site-heading {
+  padding: 100px 0 50px;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .intro-header .site-heading h1 {
+    font-size: 40px;
+  }
+  .intro-header .site-heading {
+    padding: 100px 0;
+  }
+}
+
+/*!
+ * Services
+ */
+
+/*!
+ * Portfolio
+ */
+.servicesboxes {
+}
+
+.servicesImage {
+	height: 250px;
+	width: 250px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
