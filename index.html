@@ -15,7 +15,6 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/cleanblog.css" rel="stylesheet">
     <link href="css/timstyle.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
@@ -53,14 +52,14 @@
                         <a href="#services">Services</a>
                     </li>
                     <li>
-                        <a href="#about">Work</a>
+                        <a href="#portfolio">Work</a>
                     </li>
                     <li>
-                        <a href="">About</a>
+                        <a href="#footer">About</a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="">Photography</a>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -70,14 +69,14 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+    <header class="intro-header" style="background-image: url('img/coverdarker.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
                         <h1>Tim Webber</h1>
                         <hr class="small">
-                        <h2>UX/UI Designer, Developer, Adrenaline-Seeker</h2>
+                        <h2 class="white">UX/UI Designer, Developer, Adrenaline-Seeker</h2>
                     </div>
                 </div>
             </div>
@@ -87,60 +86,298 @@
     <!-- Services -->
     <div class="container">
         <div id="services" class="row">
-            <div class="col-sm-4 text-center servicesboxes">
-                <img class="servicesImage" src="img/post-sample-image.jpg">
+            <div class="col-md-4 text-center servicesBoxes">
+                <img class="servicesImage" src="img/services/web.jpg">
                 <h3> Webpage / Webapp Design</h3>
-                <p class="blackp">Bacon ipsum dolor amet meatloaf tri-tip t-bone biltong andouille turducken tenderloin flank pork rump. Shoulder porchetta pork loin meatball fatback picanha kielbasa rump bresaola. Ground round ribeye filet mignon bresaola beef ribs biltong venison cow capicola porchetta shoulder cupim salami jerky drumstick. Andouille jowl t-bone frankfurter. Short loin turkey meatloaf, t-bone </p>
+                <p class="blackp">I've developed a strong interest in scalable products and intuitive interaction through my work at two great Co-Ops during my time at Northeastern. By allowing my native passion for the ultimate user experience guide its way to teach myself how to be a UX/UI Designer, I've since developed my skills to accurately design the intuitive ideas in my head and provide my users with incredibly pleasant user experiences.</p>
             </div>
-            <div class="col-sm-4 text-center servicesboxes">
-                <img class="servicesImage" src="img/post-sample-image.jpg">
-                <h3> Webpage / Webapp Design</h3>
-                <p class="blackp">Bacon ipsum dolor amet meatloaf tri-tip t-bone biltong andouille turducken tenderloin flank pork rump. Shoulder porchetta pork loin meatball fatback picanha kielbasa rump bresaola. Ground round ribeye filet mignon bresaola beef ribs biltong venison cow capicola porchetta shoulder cupim salami jerky drumstick. Andouille jowl t-bone frankfurter. Short loin turkey meatloaf, t-bone </p>
+            <div class="col-md-4 text-center servicesBoxes">
+                <img class="servicesImage" src="img/services/mobile.jpg">
+                <h3> Mobile Design</h3>
+                <p class="blackp"> I've spent lots of time designing consumer app side projects (email and a social connection app) to explore the entrepreneurial ideas in my head and develop the mobile design skills I've yearned for after focusing on web during my previous two Co-Ops at Ahold USA and Veson Nautical.</p>
             </div>
-            <div class="col-sm-4 text-center servicesboxes">
-                <img class="servicesImage" src="img/post-sample-image.jpg">
-                <h3> Webpage / Webapp Design</h3>
-                <p class="blackp">Bacon ipsum dolor amet meatloaf tri-tip t-bone biltong andouille turducken tenderloin flank pork rump. Shoulder porchetta pork loin meatball fatback picanha kielbasa rump bresaola. Ground round ribeye filet mignon bresaola beef ribs biltong venison cow capicola porchetta shoulder cupim salami jerky drumstick. Andouille jowl t-bone frankfurter. Short loin turkey meatloaf, t-bone </p>
+            <div class="col-md-4 text-center servicesBoxes">
+                <img class="servicesImage" src="img/services/develop.jpg">
+                <h3> Web / Mobile Development</h3>
+                <p class="blackp">I'll be graduating in May 2016 with my Dual BS in Computer Science and Cognitive Psychology. Since my freshman year at Northeastern University, I've spent countless hours developing my foundational programming skills to have the ability to acquire any programming language. With this, I've been able to build actual products that can be presented to both the classroom and the world.  </p>
             </div>
         </div>
     </div>
 
     <!-- Portfolio Items -->
-    
+    <div class="fullContainer">
+        <div class="container portfolioContainer text-center">
+            <div id="portfolio" class="row">
+                <!-- PortfolioItem -->
+                <div class="col-sm-3 portolioItem">
+                    <img class="portfolioCoverImage CoverImage1" data-toggle="modal" data-target=".modal1" >
+                    <h3 class="white"> Veson Nautical</h3>
+                    <p class="whitep"> UX/UI Designer </p>
+                </div>
+                <!-- First Modal -->
+                <div class="modal fade modal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div id="carousel1" class="carousel slide" data-ride="carousel" data-wrap="false">
+                <!-- Wrapper for slides -->
+                          <div class="carousel-inner">
+                            <div class="item active">
+                             <img class="img-responsive modalImage" src="img/veson/1maps.png">
+                            </div>
+                            <div class="item">
+                              <img class="img-responsive modalImage" src="img/veson/2maps.png">
+                            </div>
+                            <div class="item">
+                              <img class="img-responsive modalImage" src="img/veson/3form.png">
+                            </div>
+                            <div class="item">
+                              <img class="img-responsive modalImage" src="img/veson/4form.png">
+                            </div>
+                          </div>
+                <!-- Controls -->
+                          <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                          </a>
+                          <a class="right carousel-control" href="#carousel1" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                          </a>
+                        </div>
+                        <div class="bottomModal">
+                        <h3 class="white"> VESON NAUTICAL - UX/UI DESIGNER, PRODUCT TEAM </h3>
+                              <p class="whitep"> <span style="font-weight: bold">Services: </span>Experience Design, Interface Design, User Testing <br><span style="font-weight: bold">Features:</span> Market Inbox, Veslink Form Designer, Veslink Advanced Maps, Veslink Onboard
+                                <br><br>Serving as the lone User Experience and Interface Designer within the company, I have been leading the front-end design of an enterprise maritime software company’s transition to web - from designing completely new features to enhancing the functionality, usability and aesthetic of pre-existing ones. Collaborating directly with the product team, development team and CEO, I delivered detailed wireframes, polished mockups and clickable prototypes - among a number of other deliverables - to drive customer acquisition and retention. <br><br> www.veson.com</p>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- PortfolioItem -->
+                <div class="col-sm-3 portolioItem ">
+                    <img class="portfolioCoverImage CoverImage2" data-toggle="modal" data-target=".modal2">
+                    <h3 class="white"> Email Client - Early Preview</h3>
+                    <p class="whitep"> UX/UI Design </p>
+                </div>
+                <!-- Second Modal -->
+                <div class="modal fade modal2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div id="carousel2" class="carousel slide" data-ride="carousel" data-wrap="false">
+                <!-- Wrapper for slides -->
+                          <div class="carousel-inner">
+                            <div class="item active">
+                             <img class="img-responsive modalImage" src="img/email/1pic.png">
+                            </div>
+                            <div class="item">
+                              <img class="img-responsive modalImage" src="img/email/2pic.png">
+                            </div>
+                            <div class="item">
+                              <img class="img-responsive modalImage" src="img/email/3pic.png">
+                            </div>
+                            <div class="item">
+                              <img class="img-responsive modalImage" src="img/email/4pic.png">
+                            </div>
+                            <div class="item">
+                              <img class="img-responsive modalImage" src="img/email/5pic.png">
+                            </div>
+                            <div class="item">
+                              <img class="img-responsive modalImage" src="img/email/sketch1.jpg">
+                            </div>
+                            <div class="item">
+                              <img class="img-responsive modalImage" src="img/email/sketch2.jpg">
+                            </div>
+                            <div class="item">
+                              <img class="img-responsive modalImage" src="img/email/sketch3.jpg">
+                            </div>
+                            <div class="item">
+                              <img class="img-responsive modalImage" src="img/email/sketch4.jpg">
+                            </div>
+                            <div class="item">
+                              <img class="img-responsive modalImage" src="img/email/sketch5.jpg">
+                            </div>
+                            <div class="item">
+                              <img class="img-responsive modalImage" src="img/email/sketch6.jpg">
+                            </div>
+                          </div>
+                <!-- Controls -->
+                          <a class="left carousel-control" href="#carousel2" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                          </a>
+                          <a class="right carousel-control" href="#carousel2" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                          </a>
+                        </div>
+                        <div class="bottomModal">
+                        <h3 class="white"> Email Client, Early Preview - UX/UI Design</h3>
+                              <p class="whitep"> <span style="font-weight: bold">Services: </span>Experience Design, Interface Design
+                                <br><br>This is an extremely early design prototype preview for a game-changing email app. As an email Poweruser, I have yet to find an email client as simple, functional and efficient as I would like to have. That said, my goal for this project is to design an email client based on simplicity and efficiency to cater towards both power users and that older relative who has no technical ability whatsoever. <br><br>Some problems with Mobile Email include: 1 e-mail message per screen, unable to swipe from email to email, must view an email on another page (past the main home screen), and download attachments on another page. These result in unnecessary wait and loading times for the user which, in today’s world, result in much frustration. <br><br>As one may infer, the main goal of this app is to give the user all visibility and functionality needed for their emails directly from the home screen, so that taking the time to dive into each individual email is eliminated.<br><br>I've placed this project on hold indefinitely, as other projects have come up with higher priority. - TW, 03/2016</p>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- PortfolioItem -->
+                <div class="col-sm-3 portolioItem">
+                    <img class="portfolioCoverImage CoverImage3" data-toggle="modal" data-target=".modal3">
+                    <h3 class="white"> E-house.io</h3>
+                    <p class="whitep"> Web Designer, Developer </p>
+                </div>
+                <!-- Third Modal -->
+                <div class="modal fade modal3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div id="carousel3" class="carousel slide" data-ride="carousel" data-wrap="false">
+                <!-- Wrapper for slides -->
+                          <div class="carousel-inner">
+                            <div class="item active">
+                             <img class="img-responsive modalImage" src="img/ehouse/1.png">
+                            </div>
+                            <div class="item">
+                              <img class="img-responsive modalImage" src="img/ehouse/2.png">
+                            </div>
+                            <div class="item">
+                              <img class="img-responsive modalImage" src="img/ehouse/3.png">
+                            </div>
+                            <div class="item">
+                              <img class="img-responsive modalImage" src="img/ehouse/4.png">
+                            </div>
+                          </div>
+                <!-- Controls -->
+                          <a class="left carousel-control" href="#carousel3" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                          </a>
+                          <a class="right carousel-control" href="#carousel3" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                          </a>
+                        </div>
+                        <div class="bottomModal">
+                        <h3 class="white"> E-house.io - Web Design, Development</h3>
+                              <p class="whitep"> <span style="font-weight: bold">Services: </span>Experience Design, Interface Design, Online Presence Creation
+                                <br><br>Collaborating with an incredible group of driven millennials, I designed and developed the front-end of the E-house online presence using simply HTML, CSS, Javascript, Bootstrap, and my design intuition. The goals for this project were to create a web presence that projects the emotion and excitement that we carry within E-House to the public, in hopes of spreading inspiration to those around us. </p>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- PortfolioItem -->
+                <div class="col-sm-3 portolioItem">
+                    <img class="portfolioCoverImage CoverImage4" data-toggle="modal" data-target=".modal4">
+                    <h3 class="white"> Tim Webber</h3>
+                    <p class="whitep"> Web Design, Development </p>
+                </div>
+                <!-- Fourth Modal -->
+                <div class="modal fade modal4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div id="carousel4" class="carousel slide" data-ride="carousel" data-wrap="false">
+                <!-- Wrapper for slides -->
+                          <div class="carousel-inner">
+                            <div class="item active">
+                             <img class="img-responsive modalImage" src="img/portfoliosite/1.png">
+                            </div>
+                            <div class="item">
+                              <img class="img-responsive modalImage" src="img/portfoliosite/2.png">
+                            </div>
+                            <div class="item">
+                              <img class="img-responsive modalImage" src="img/portfoliosite/3.png">
+                            </div>
+                          </div>
+                <!-- Controls -->
+                          <a class="left carousel-control" href="#carousel4" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                          </a>
+                          <a class="right carousel-control" href="#carousel4" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                          </a>
+                        </div>
+                        <div class="bottomModal">
+                        <h3 class="white"> Tim Webber - Web Designer, Development</h3>
+                              <p class="whitep"> <span style="font-weight: bold">Services: </span>Experience Design, Interface Design, Online Presence Creation
+                                <br><br>Frustrated with the limitations of SquareSpace and inspired by my own need to create my own presence, I decided to design and develop my portfolio site and ditch my past SquareSpace presence. Taking a total of about 3 days, I designed an online web presence representative of my aesthetic, personality and work quality. I then built this site using HTML, CSS, Bootstrap and SASS. Let me know if you find any bugs :)</p>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!--<div class="row">
+                <!-- PortfolioItem
+                <div class="col-sm-3 portolioItem">
+                    <img class="portfolioCoverImage">
+                    <h3 class="white"> Veson Nautical</h3>
+                    <p class="whitep"> UX/UI Designer </p>
+                </div>
+                <!-- PortfolioItem
+                <div class="col-sm-3 portolioItem">
+                    <img class="portfolioCoverImage">
+                    <h3 class="white"> Veson Nautical</h3>
+                    <p class="whitep"> UX/UI Designer </p>
+                </div>
+                <!-- PortfolioItem
+                <div class="col-sm-3 portolioItem">
+                    <img class="portfolioCoverImage">
+                    <h3 class="white"> Veson Nautical</h3>
+                    <p class="whitep"> UX/UI Designer </p>
+                </div>
+                <!-- PortfolioItem
+                <div class="col-sm-3 portolioItem">
+                    <img class="portfolioCoverImage">
+                    <h3 class="white"> Veson Nautical</h3>
+                    <p class="whitep"> UX/UI Designer </p>
+                </div>-->
+            </div>
+        </div> 
+    </div>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
+        <div id="footer" class="container">
+            <div class="row">
+                <div class="col-md-2 col-md-offset-2">
+                    <img class="bioImage" src="img/headshot.png">
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                    <h2 class="black">Tim Webber</h2> <br>
+                    <p class="blackp">I'm an experience designer at heart. I strive to craft seamless experiences that build strong relationships between my users and my products. With a unique blend of cognitive psychology, computer science technical ability and a sharp eye for usability and design, I'm constantly working to design and develop experiences that can work to gently guide my users and become inherently natural. Fundamentally, I'm passionate about making the best experiences possible for people and to make them happy, whatever the industry may be. </p>
+                </div>
+            </div>
+            <br><br>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">
                         <li>
-                            <a href="#">
+                            <a href="https://www.instagram.com/timwebber01" target="_newtab">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
                                 </span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://www.linkedin.com/in/timwebber01" target="_newtab">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/TheWebmasta" target="_newtab">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
                                 </span>
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Your Website 2014</p>
+                    <br><br>
+                    <div class="text-center">
+                        <a href="mailto:timwebber01@gmail.com"<button type="button" class="text-center btn btn-default">Hit me up!</button></a>
+                    </div>
+                    <br><br>
+                    <p class="copyright text-muted">Copyright &copy; Tim Webber 2016</p>
                 </div>
+                
             </div>
         </div>
     </footer>
@@ -152,7 +389,7 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="js/clean-blog.min.js"></script>
+    <script src="js/clean-blog.js"></script>
 
 </body>
 
