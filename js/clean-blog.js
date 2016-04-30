@@ -27,3 +27,10 @@ jQuery(document).ready(function($) {
             });
     }
 });
+
+//$('.modal1').on('hidden.bs.modal', function () {
+//        window.alert('hidden event fired!');
+//        $('#carousel1').carousel({
+//            data-slide-to: 1;
+//    })
+//});
