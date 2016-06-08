@@ -1,4 +1,43 @@
 /*!
+ * Animation
+ */
+/*
+==============================================
+pulse
+==============================================
+*/
+.pulse {
+  animation-name: pulse;
+  -webkit-animation-name: pulse;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite; }
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.98);
+    opacity: 0.7; }
+  50% {
+    transform: scale(1);
+    opacity: 1; }
+  100% {
+    transform: scale(0.98);
+    opacity: 0.7; } }
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.95);
+    opacity: 0.7; }
+  50% {
+    -webkit-transform: scale(1);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(0.95);
+    opacity: 0.7; } }
+/*
+
+
+/*!
  * Fonts
  */
 @font-face {
@@ -113,7 +152,8 @@ p.whitep {
   background-image: no-repeat;
   background-size: cover;
   background-position: center;
-  */ }
+  */
+  padding-bottom: 40px; }
 
 .portfolioItem {
   text-align: left; }
@@ -135,17 +175,23 @@ p.whitep {
   opacity: 0.5; }
 
 .CoverImage1 {
-  background-image: url("../img/veson/1maps.png");
+  background-image: url("../img/veson/3form.png");
   border: none; }
 
 .CoverImage2 {
-  background-image: url("../img/email/1pic.png"); }
+  background-image: url("../img/email/emailwhitebackground.png"); }
 
 .CoverImage3 {
-  background-image: url("../img/ehouse/1.png"); }
+  background-image: url("../img/ehouse/ehousewhitebackground.png"); }
 
 .CoverImage4 {
   background-image: url("../img/portfoliosite/1.png"); }
+
+.CoverImage5 {
+  background-image: url("../img/principlesproject/1intro.gif"); }
+
+.CoverImage6 {
+  background-image: url("../img/gamerduel/WhiteBackgroundFinalOnboarding.png"); }
 
 .modalImage {
   margin: 0 auto;
