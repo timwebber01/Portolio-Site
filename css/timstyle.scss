@@ -154,8 +154,8 @@ p.whitep {
 }
 
 .portfolioCoverImage {
-    height: 200px;
-    width: 200px;
+    height: 175px;
+    width: 250px;
     cursor: pointer;
     border: none;
     background-size: cover;
@@ -172,28 +172,28 @@ p.whitep {
 }
 
 .CoverImage1 {
-    background-image: url("../img/veson/3form.png");
+    background-image: url("../img/veson/covericon.png");
     border: none;
 }
 
 .CoverImage2 {
-    background-image: url("../img/email/emailwhitebackground.png");
+    background-image: url("../img/email/covericon.png");
 }
 
 .CoverImage3 {
-    background-image: url("../img/ehouse/ehousewhitebackground.png");
+    background-image: url("../img/ehouse/covericon.png");
 }
 
 .CoverImage4 {
-    background-image: url("../img/portfoliosite/1.png");
+    background-image: url("../img/mehungry/covericon.png");
 }
 
 .CoverImage5 {
-    background-image: url("../img/principlesproject/1intro.gif");
+    background-image: url("../img/principlesproject/covericon.png");
 }
 
 .CoverImage6 {
-    background-image: url("../img/gamerduel/WhiteBackgroundFinalOnboarding.png");
+    background-image: url("../img/gamerduel/iconcover.png");
 }
 
 .modalImage {
@@ -370,6 +370,7 @@ hr.small {
 footer {
     /*background-color: $blackparagraph;*/
     padding: 50px 0 65px;
+    text-align: center;
 }
 footer .list-inline {
   margin: 0;
@@ -381,6 +382,7 @@ footer .copyright {
     text-align: center;
     margin-bottom: 0;
 }
+
 .btn {
   font-family: $font-stack;
   text-transform: uppercase;
