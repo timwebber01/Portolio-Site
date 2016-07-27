@@ -45,7 +45,7 @@ $white: #FFFFFF;
 h1 {
     font-size: 50px;
     font-weight: bold;
-    color: $blackparagraph;
+    color: $white;
 }
 
 h2 {
@@ -76,23 +76,14 @@ h2.black {
 
 h3 {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.1;
     color: $blackparagraph;
     text-transform: uppercase;
 }
 
-h3.white {
-    font-size: 18px;
-    line-height: 1.1;
-    color: $white;
-}
-
-
-h3.black {
-    font-size: 18px;
-    line-height: 1.1;
-    color: $blackparagraph;
+p {
+  font-size: 16px;
 }
 
 p.blackp {
@@ -103,6 +94,14 @@ p.blackp {
 p.whitep {
     color: $white;
     font-weight: medium;
+}
+
+.white {
+  color: $white;
+}
+
+.dark {
+  color: $blackparagraph;
 }
 
 /*!
@@ -119,7 +118,7 @@ p.whitep {
   text-align: center;
 }
 .intro-header .site-heading {
-  padding: 100px 0 100px;
+  padding: 100px 0px 50px 0px;
   color: white;
 }
 
@@ -204,6 +203,10 @@ p.whitep {
 .modal-content {
     background-color: $mainbackground;
 }
+.modal-xl-content {
+    background-color: $mainbackground;
+    opacity: 50%;
+}
 
 .bottomModal {
     padding: 0px 50px 0px 50px;
@@ -211,6 +214,40 @@ p.whitep {
 
 .modal {
     visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+/* Larger Modal
+*/
+@media (max-width: 992px) {
+  .modal-xlg {
+    background-color: $mainbackground;
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+  }
+
+  .xlModalImage {
+  min-width: 80%;
+  max-width: 325px !important;
+  }
+}
+
+.modal-xlg {
+    background-color: $mainbackground;
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+    background: url("../img/xlmodalbackground.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.xlModalImage {
+  max-width: 800px;
+  margin: 0 auto;
+
 }
 
 /*!
@@ -222,8 +259,7 @@ p.whitep {
 }*/
 
 #services {
-    margin-top: 75px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 
 .servicesImage {
@@ -278,7 +314,7 @@ hr.small {
     max-width: 100px;
     margin: 15px auto;
     border-width: 4px;
-    border-color: $blackparagraph;
+    border-color: $white;
 }
 .navbar-custom {
     position: absolute;
