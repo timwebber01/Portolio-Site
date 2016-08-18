@@ -58,8 +58,7 @@ h3 {
   font-weight: bold;
   font-size: 20px;
   line-height: 1.1;
-  color: #262626;
-  text-transform: uppercase; }
+  color: #262626; }
 
 p {
   font-size: 16px; }
@@ -179,7 +178,8 @@ p.whitep {
     background-color: #333;
     height: 100%;
     width: 100%;
-    opacity: 50%; }
+    opacity: 50%;
+    visibility: visible; }
 
   .xlModalImage {
     min-width: 80%;
@@ -191,10 +191,16 @@ p.whitep {
   opacity: 50%;
   background: url("../img/xlmodalbackground.png");
   background-size: 100% 100%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  visibility: visible; }
 
 .xlModalImage {
   max-width: 800px;
+  margin: 0 auto; }
+
+.xlModalImageSketches {
+  max-width: 600px;
+  max-height: 600px;
   margin: 0 auto; }
 
 /*!
@@ -397,5 +403,7 @@ body {
 .parallax-window {
   min-height: 400px;
   background: transparent; }
+
+/*# sourceMappingURL=timstyle.css.map */
 
 /*# sourceMappingURL=timstyle.css.map */
