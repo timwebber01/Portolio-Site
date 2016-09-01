@@ -26,6 +26,12 @@ jQuery(document).ready(function($) {
                 this.previousTop = currentTop;
             });
     }
+
+    $(".portfolioItem").mouseover(function() {
+    $(this).children(".portfoliowords").show();
+}).mouseout(function() {
+    $(this).children(".portfoliowords").hide();
+});
 });
 
 //$('.modal1').on('hidden.bs.modal', function () {
