@@ -67,19 +67,46 @@ header {
     font-size: 40px; } }
 .introCard {
   padding: 150px 50px 150px 50px;
-  background-color: rgba(255, 255, 255, 0.75);
-  border-radius: 3px; }
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 .servicesCard {
   padding: 30px 50px 30px 50px;
-  background-color: rgba(255, 255, 255, 0.75);
-  border-radius: 3px; }
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.introCard:hover {
+  background-color: white;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 50px #fff; }
+
+.servicesCard:hover {
+  background-color: white;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 50px #fff; }
 
 .servicesImage {
-  max-width: 500px; }
+  max-height: 500px; }
 
 #services {
   margin-bottom: 100px; }
+
+#servicesCard {
+  margin-top: 140px; }
 
 #resume {
   margin-top: 30px; }
@@ -181,7 +208,7 @@ header {
 */
 @media (max-width: 700px) {
   .servicesImage {
-    width: 80%; } }
+    max-height: 80%; } }
 /* Larger Modal
 */
 @media (max-width: 992px) {
@@ -190,7 +217,7 @@ header {
     max-width: 325px !important; }
 
   .servicesImage {
-    max-width: 325px;
+    max-height: 500px;
     margin-top: 50px; }
 
   .portfolioItem {

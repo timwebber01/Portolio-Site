@@ -78,22 +78,52 @@ header {
 
 .introCard {
   padding: 150px 50px 150px 50px;
-  background-color: rgba(255,255,255,.75);
+  background-color: rgba(255,255,255,.50);
   border-radius: 3px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .servicesCard {
   padding: 30px 50px 30px 50px;
-  background-color: rgba(255,255,255,.75);
+  background-color: rgba(255,255,255,.50);
   border-radius: 3px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.introCard:hover {
+  background-color: rgba(255,255,255,1);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 50px #fff;
+}
+
+.servicesCard:hover {
+  background-color: rgba(255,255,255,1);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 50px #fff;
 }
 
 .servicesImage {
-  max-width: 500px;
+  max-height: 500px;
 }
 
 #services {
   margin-bottom: 100px;
+}
+
+#servicesCard {
+  margin-top: 140px;
 }
 
 #resume {
@@ -144,6 +174,8 @@ header {
   -webkit-filter: none;
   filter: none;
 }
+
+
 
 .portfolioText {
   color: $blue;
@@ -203,7 +235,7 @@ header {
 */
 @media (max-width: 700px) {
   .servicesImage {
-    width: 80%;
+    max-height: 80%;
     } }
 
 /* Larger Modal
@@ -215,7 +247,7 @@ header {
     max-width: 325px !important; }
 
   .servicesImage {
-    max-width: 325px;
+    max-height: 500px;
     margin-top: 50px; } 
 
   .portfolioItem {

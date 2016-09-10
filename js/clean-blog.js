@@ -27,11 +27,34 @@ jQuery(document).ready(function($) {
             });
     }
 
-    $(".portfolioItem").mouseover(function() {
-    $(this).children(".portfoliowords").show();
-}).mouseout(function() {
-    $(this).children(".portfoliowords").hide();
-});
+    // Show words on portfolio item hover
+    $(".portfolioItem").hover(function() {
+        $(this).children(".portfoliowords").show(200);
+        }, function() {
+        $(this).children(".portfoliowords").hide(200);
+    });
+    /*
+    // Highlight selected 
+    $("#introduction, .servicesCard").hover(function() {
+            $(this).toggleClass("cardGlow");
+        },function() {
+            $(this).toggleClass("cardGlow");
+    });*/
+
+    $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
 });
 
 //$('.modal1').on('hidden.bs.modal', function () {
