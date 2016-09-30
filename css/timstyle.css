@@ -1,16 +1,8 @@
 /*!
  * Fonts
  */
-@font-face {
-  font-family: 'Cove';
-  src: url(../fonts/CovesTypeface/CovesLight.otf);
-  font-weight: light; }
-@font-face {
-  font-family: 'Cove';
-  src: url(../fonts/CovesTypeface/CovesBold.otf);
-  font-weight: bold; }
 body {
-  font-family: "Cove", "Helvetica Neue", "sans-serif"; }
+  font-family: 'Josefin Sans', sans-serif; }
 
 /*!
  * Colors
@@ -19,9 +11,32 @@ body {
  * Text
  */
 h1 {
-  font-size: 4em;
-  font-weight: bold; }
+  font-size: 8em;
+  font-weight: 700;
+  letter-spacing: -2px;
+  color: #262626;
+  text-transform: uppercase; }
 
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  h1 {
+    font-size: 3em; } }
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  h1 {
+    font-size: 4em; } }
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 6em; } }
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 8em; } }
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 8em; } }
 h2 {
   font-size: 1.5em;
   font-weight: light;
@@ -29,10 +44,19 @@ h2 {
   display: block; }
 
 h3 {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 1.1;
-  color: #262626; }
+  color: #7f8c8d;
+  font-size: 2em; }
+
+h4 {
+  color: #337ab7;
+  font-size: 2em; }
+
+.bold {
+  font-weight: 700; }
+
+#logo {
+  margin-top: -10px;
+  width: 40px; }
 
 p {
   font-size: 16px; }
@@ -48,23 +72,29 @@ p {
   font-weight: bold; }
 
 a {
-  text-decoration: none;
-  color: white; }
+  text-decoration: none; }
 
 a:hover {
-  text-decoration: none;
-  color: white; }
-
-.floatright {
-  float: right; }
+  text-decoration: none; }
 
 header {
-  padding: 200px 0px 200px 0px;
+  padding: 200px 0px 100px 0px;
   color: white; }
+
+.portfolio-header {
+  padding: 100px 0px 50px 0px; }
 
 @media only screen and (max-width: 768px) {
   .intro-header .site-heading h1 {
     font-size: 40px; } }
+.intro {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
 .introCard {
   padding: 150px 50px 150px 50px;
   background-color: rgba(255, 255, 255, 0.5);
@@ -99,23 +129,6 @@ header {
   transition: all 0.3s ease;
   box-shadow: 0px 0px 50px #fff; }
 
-.servicesImage {
-  max-height: 500px; }
-
-#services {
-  margin-bottom: 100px; }
-
-#servicesCard {
-  margin-top: 140px; }
-
-#resume {
-  margin-top: 30px; }
-
-#hitmeupbutton {
-  margin-top: 15px;
-  margin-bottom: 50px;
-  font-size: .6em; }
-
 .center {
   margin: 0 auto; }
 
@@ -127,11 +140,12 @@ header {
   padding-bottom: 40px; }
 
 .portfolioItem {
-  min-height: 300px;
+  min-height: 300px !important;
   display: block;
   cursor: pointer;
   background-color: 333333;
   text-align: left;
+  border: 10px solid white;
   opacity: 1;
   background: no-repeat center center;
   background-attachment: scroll;
@@ -151,12 +165,12 @@ header {
   -webkit-filter: none;
   filter: none; }
 
-.portfolioText {
-  color: #337ab7; }
-
 .portfoliowords {
+  background-color: white;
   position: absolute;
   display: none;
+  padding: 1px 40px 10px 40px;
+  margin-top: 15px;
   -webkit-transition-timing-function: all .4s ease;
   -moz-transition-timing-function: all .4s ease;
   -o-transition-timing-function: all .4s ease;
@@ -164,11 +178,7 @@ header {
   transition-timing-function: all .4s ease; }
 
 #VesonItem {
-  background-image: url("../img/veson/biggercover.png");
-  border: none; }
-
-#EmailItem {
-  background-image: url("../img/email/biggercover.png"); }
+  background-image: url("../img/veson/biggercover.png"); }
 
 #ehouseitem {
   background-image: url("../img/ehouse/biggercover.png"); }
@@ -185,68 +195,15 @@ header {
 #FoodlerItem {
   background-image: url("../img/foodler/coverbigger.png"); }
 
-.modalImage {
-  margin: 0 auto;
+.portfolioPageImage {
   max-height: 400px !important; }
 
-.modal-content {
-  background-color: #333; }
-
-.modal-xl-content {
-  background-color: #333;
-  opacity: 50%; }
-
-.bottomModal {
-  padding: 0px 50px 0px 50px; }
-
-.modal {
-  visibility: hidden;
-  width: 100%;
-  height: 100%; }
-
-/* Small Devices
-*/
-@media (max-width: 700px) {
-  .servicesImage {
-    max-height: 80%; } }
 /* Larger Modal
 */
 @media (max-width: 992px) {
-  .xlModalImage {
-    min-width: 80%;
-    max-width: 325px !important; }
-
-  .servicesImage {
-    max-height: 500px;
-    margin-top: 50px; }
-
   .portfolioItem {
     -webkit-filter: none;
-    filter: none; }
-
-  .portfoliowords {
-    display: inline; }
-
-  .servicesCard {
-    text-align: center;
-    padding: 20px 0px 20px 0px; } }
-.modal-xlg {
-  background-color: black;
-  background-image: radial-gradient(white, rgba(255, 255, 255, 0.2) 2px, transparent 40px), radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px), radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
-  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-  webkit-tap-highlight-color: #000000;
-  visibility: visible; }
-
-.xlModalImage {
-  max-width: 800px;
-  margin: 0 auto; }
-
-.xlModalImageSketches {
-  max-width: 600px;
-  max-height: 600px;
-  margin: 0 auto; }
-
+    filter: none; } }
 /*!
  * Footer
  */
@@ -299,12 +256,12 @@ hr.small {
   font-family: "Cove", "Helvetica Neue", "sans-serif"; }
 
 .navbar-custom .navbar-brand {
-  font-weight: 800; }
+  font-weight: 400; }
 
 .navbar-custom .nav li a {
   text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 800;
+  font-size: .7em;
+  font-weight: 400;
   letter-spacing: 1px; }
 
 @media only screen and (min-width: 768px) {
@@ -313,12 +270,14 @@ hr.small {
     border-bottom: 1px solid transparent; }
 
   .navbar-custom .navbar-brand {
+    text-transform: uppercase;
+    font-size: .8em;
     color: #262626;
     padding: 20px; }
 
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
-    color: rgba(255, 255, 255, 0.8); }
+    color: rgba(0, 0, 0, 0.8); }
 
   .navbar-custom .nav li a {
     color: #262626;
@@ -326,7 +285,7 @@ hr.small {
 
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: rgba(255, 255, 255, 0.8); } }
+    color: rgba(0, 0, 0, 0.3); } }
 @media only screen and (min-width: 1170px) {
   .navbar-custom {
     -webkit-transition: background-color 0.3s;
@@ -387,34 +346,6 @@ footer .copyright {
   text-align: center;
   margin-bottom: 0; }
 
-.avatar {
-  max-width: 100px; }
-
-.btn {
-  font: "Cove, Helvetica Neue, Arial";
-  padding: 30px 75px 30px 75px;
-  text-align: center;
-  font-size: 1.5em;
-  color: white;
-  border: none; }
-
-.btn-small {
-  padding: 15px 37px 15px 37px; }
-
-.btn-success {
-  color: #fff;
-  background-color: #5cb85c; }
-
-.btn-lg {
-  font-size: 16px;
-  padding: 25px 35px; }
-
-.btn-default:hover,
-.btn-default:focus {
-  background-color: #000000;
-  border: 1px solid #000000;
-  color: white; }
-
 ::-moz-selection {
   color: white;
   text-shadow: none;
@@ -434,10 +365,16 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  background-color: black;
-  background-image: radial-gradient(white, rgba(255, 255, 255, 0.2) 2px, transparent 40px), radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px), radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 30px);
-  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  /*
+  background-color:black;
+  background-image:
+  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;*/
+  background-color: white;
   webkit-tap-highlight-color: #000000; }
 
 /*# sourceMappingURL=timstyle.css.map */

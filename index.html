@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portfolio Site">
     <meta name="author" content="Tim Webber">
+    <link rel="icon" href="img/logo.png">
 
     <title>Tim Webber</title>
 
@@ -20,17 +21,11 @@
 
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet">
 
 </head>
 
-<body style="background-color: #000000">
+<body style="background-color: #FFFFFF">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -43,7 +38,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Timothy</a>
+                <a class="navbar-brand" href="index.html"><img id="logo" src="img/logo.png"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -53,7 +48,7 @@
                         <a href="#portfolio">Work</a>
                     </li>
                     <li>
-                        <a href="#footer">About</a>
+                        <a href="#footer">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -63,273 +58,78 @@
     </nav>
 
     <!-- AllContainer -->
-    <div>
-      
-            <div class="container">
-                <header class="intro-header">
-                
-                    <div class="row">
-                        <div id="introduction" class="col-md-6 col-md-offset-3 introCard"> 
-                            <h2 class="black"><span class="bluebold">Yo!</span> I'm a</h2>
-                            <h1 class="black">Product Designer</h1>
-                            <h2 class="black">and my name's <span class="bluebold">Tim.</span></h2>
-                        </div>
-                    </div>
-                </header>
-
-                <div id="services" class="row">
-                    <div id="servicesCard" class="col-md-4 col-md-offset-1 servicesCard">
-                        <img class="icon" src="img/icons/ruler.png"> 
-                        <h2 class="black"> I can help you craft <span class="bluebold">intuitive</span> and <span class="bluebold">empathetic experiences</span> for your platform(s). Take a look at my projects below.</h2>
-                    </div>
-                    <div class="col-md-3 col-md-offset-3">
-                        <img class="servicesImage center-block" src="img/iphone6.png">
-                    </div>
+    <div class="container">
+        <header class="intro-header">
+        
+            <div class="intro row black">
+                <div class="introtop col-xs-12">
+                    <p> Hi, I'm</p>
+                    <h1>Tim Webber</h1>
+                </div>
+                <div class="introshort col-md-3 col-offset-sm-2">
+                    <p> UX / UI / Product </p>
+                    <p> Designer / Developer</p>
+                </div>
+                <div class="introlong col-md-6 col-offset-sm-2">
+                    <p> I'm a passionate young product designer crafting beautifully intuitive digital experiences for people in all spaces. Grounding my designs in human cognition backed by user research, I'm capable of delivering any and all product design artifacts - from early user research reports and scenarios to fully interactive visual prototypes. Let's build something together! </p>
                 </div>
             </div>
-
-                
-
-
+        </header>
+    </div>
 
     <div id="portfoliocontainer" class="container">
         <div id="portfolio" class="row">
 
+        <!-- Foodler -->
+                <a href="work/foodler.html"><div id="FoodlerItem" class="col-md-4 portfolioItem" data-toggle="modal" data-target=".modal7">
+                    <div class="portfoliowords">
+                        <h4 id="bold"> Foodler.com</h4>
+                        <p> Product Design Interview Exercise </p>
+                    </div>
+                </div></a>
+
         <!-- GamerDuel -->
-            <div id="GamerDuelItem" class="col-md-4 portfolioItem" data-toggle="modal" data-target=".modal6">
+            <a href="work/gamerduel.html"><div id="GamerDuelItem" class="col-md-4 portfolioItem" data-toggle="modal" data-target=".modal6">
                 <div class="portfoliowords">
-                    <h1 class="white portfolioText "> GamerDuel</h1>
-                    <p class="white "> UX/UI Design </p>
+                    <h4 id="bold"> GamerDuel</h4>
+                    <p> UX/UI Design </p>
                 </div>
-            </div>
-            <!-- Modal -->
-                <div class="modal fade modal6 modal-xlg" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" >
-                    <br>
-                    <button id="singlebutton" class="btn btn-primary btn-small center-block" data-dismiss="modal">
-                        Close
-                    </button>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <h1 class="white"> GamerDuel - UX/UI Design</h1><br>
-                        <p class="white"> <span style="font-weight: bold">Services: </span> Experience Design, Interface Design <br><span style="font-weight: bold">Features:</span> New User Onboarding, Empty Challenges, Visual Design
-                                <br><br>Upon graduating Northeastern, I spent a couple of days at Gamerduel - a seed-funded startup located within the NorthOut incubator in Downtown Boston. Fueling my desire to submerge myself into a startup (albeit very briefly), I spent hours talking business direction and design values with the 2-man team, along with a multitude of other entrepreneurs in the incubator space. I also redesigned some UX items, including new user on boarding experience, empty challenge engagement, and visual design. As seen in the first image above, I simplified their new user on boarding flow to provide a clean 3-step explanation of services and reduce overhead to joining the platform. I also drove engagement by designing a new challenge suggestion item in the challenges page if no challenges were present, rather than just showing nothing. Lastly, I gave the feed and challenge items a visual redesign to improve space efficiency and bring an overall cleaner look. <br><br> www.getgamerduel.com</p>
-                        <img class="xlModalImage img-responsive" src="img/gamerduel/biggercover.png"> <br>
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImage img-responsive" src="img/gamerduel/1FinalOnboarding.png"> <br> 
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImage img-responsive" src="img/gamerduel/ProcessOnBoarding.png"> <br> 
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImage img-responsive" src="img/gamerduel/2NewChallenges.png"> <br> 
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImage img-responsive" src="img/gamerduel/3NewInterfaceItems.png"> <br>
-                        <button id="singlebutton" class="btn btn-primary btn-small center-block" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
+            </div></a>
 
         <!-- MeHungry -->
-            <div id="MeHungryItem" class="col-md-4 portfolioItem" data-toggle="modal" data-target=".modal4">
+            <a href="work/mehungry.html"><div id="MeHungryItem" class="col-md-4 portfolioItem" data-toggle="modal" data-target=".modal4">
                 <div class="portfoliowords">
-                    <h1 class="white portfolioText "> MeHungry</h1>
-                    <p class="white "> Product Design </p>
+                    <h4 id="bold"> MeHungry</h4>
+                    <p> Product Design </p>
                 </div>
-            </div>
-            <!-- Modal -->
-                <div class="modal fade modal4 modal-xlg" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" > 
-                    <br>
-                    <button id="singlebutton" class="btn btn-primary btn-small center-block" data-dismiss="modal">Close</button>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <h1 class="white"> MeHungry - Product Design</h1><br>
-                        <h2 class="white"> This is an abridged version. <a href="https://drive.google.com/open?id=0B-YID4ye2UFBeHJ5S1NxMVZlSzg" target="_newtab">Click here for the full slidedeck (PDF)</a><br><br></h2>
-                        <img class="xlModalImage img-responsive" src="img/mehungry/CityInUse.png"> <br>
-                        <h2 class="white"> <span style="font-weight: bold">Objective:</span> Rapid design process of a novel idea to showcase my design thinking.</h2><br><br><br>
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImage img-responsive" src="img/mehungry/research.png"> <br> 
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImage img-responsive" src="img/mehungry/competition.png"> <br> 
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImage img-responsive" src="img/mehungry/brainstorm.png"> <br> 
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImage img-responsive" src="img/mehungry/wireframe.png"> <br> 
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImage img-responsive" src="img/mehungry/visual1.png"> <br>
-                        <img class="xlModalImage img-responsive" src="img/mehungry/visual2.png"> <br>
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImage img-responsive" src="img/mehungry/nextsteps.png"> <br> 
-                        <img class="xlModalImage img-responsive" src="img/mehungry/final.png"> <br>
-                        <button id="singlebutton" class="btn btn-primary btn-small center-block" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-
-        <!-- Email -->
-            <div id="EmailItem" class="col-md-4 portfolioItem" data-toggle="modal" data-target=".modal2">
-                <div class="portfoliowords">
-                    <h1 class="white portfolioText "> Email</h1>
-                    <p class="white "> Product Design Preview </p>
-                </div>
-            </div>
-            <!-- Modal -->
-                <div class="modal fade modal2 modal-xlg" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" > 
-                    <br>
-                    <button id="singlebutton" class="btn btn-primary btn-small center-block" data-dismiss="modal">Close</button>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <h1 class="white"> Email Client - Preview</h1><br>
-                        <p class="white"> <span style="font-weight: bold">Services: </span>Experience Design, Interface Design
-                                <br><br>This is an extremely early design prototype preview for a game-changing email app. As an email Poweruser, I have yet to find an email client as simple, functional, and efficient as I would like. That said, my goal for this project was to design an email client based on simplicity and efficiency to cater towards both other power users and those older relatives who have no technical ability whatsoever. <br><br>Some problems with Mobile Email include: restricted views to one e-mail message per screen, an inability to swipe from email to email, having to view an email on another page (past the main home screen), and being unable to download attachments on another page. These limitations result in unnecessary delays and longer loading times for the user which, in today’s world, give rise to immense frustration. <br><br>The main goal of this app is to give the user all visibility and functionality needed for their emails directly from the home screen, so that the need for additional time and effort to dive into individual emails is eliminated.<br><br>I've placed this project on hold indefinitely as other projects have been designated as higher priority. - TW, 03/2016</p>
-                        <img class="xlModalImage img-responsive" src="img/email/biggercover.png"> <br>
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImage img-responsive" src="img/email/BoardExport.png"> <br> 
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImageSketches img-responsive" src="img/email/sketch1.jpg"> <br> 
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImageSketches img-responsive" src="img/email/sketch2.jpg"> <br> 
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImageSketches img-responsive" src="img/email/sketch3.jpg"> <br> 
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImageSketches img-responsive" src="img/email/sketch4.jpg"> <br> 
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImageSketches img-responsive" src="img/email/sketch5.jpg"> <br> 
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImageSketches img-responsive" src="img/email/sketch6.jpg"> <br>
-                        <button id="singlebutton" class="btn btn-primary btn-small center-block" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
+            </div></a>
         </div>
         <div class="row">
         <!-- E-house -->
-            <div id="ehouseitem" class="col-md-4 portfolioItem" data-toggle="modal" data-target=".modal3">
+            <a href="work/ehouse.html"><div id="ehouseitem" class="col-md-4 portfolioItem" data-toggle="modal" data-target=".modal3">
                 <div class="portfoliowords">
-                    <h1 class="white portfolioText"> EHouse</h1>
-                    <p class="white "> Web Design </p>
+                    <h4 id="bold"> EHouse</h4>
+                    <p> Web Design </p>
                 </div>
-            </div>
-            <!-- Modal -->
-                <div class="modal fade modal3 modal-xlg" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" > 
-                    <br>
-                    <button id="singlebutton" class="btn btn-primary btn-small center-block" data-dismiss="modal">Close</button>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <h1 class="white"> E-house.io</h1><br>
-                        <p class="white"> <span style="font-weight: bold">Services: </span>Experience Design, Interface Design, Online Presence Creation<br><br>I designed and developed the front-end of the E-house online presence after collaborating with an incredible group of driven millennials using only HTML, CSS, Javascript, Bootstrap, and my own intuition for design. We sought to create a web presence that projects the emotion and excitement that we carried within ourselves and within E-House to the public in hopes of spreading inspiration to those around us. </p>
-                        <img class="xlModalImage img-responsive" src="img/ehouse/biggercover.png"> <br>
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImage img-responsive" src="img/ehouse/ehouseboard.png"> <br>
-                        <button id="singlebutton" class="btn btn-primary btn-small center-block" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
+            </div></a>
 
 
         <!-- Veson Nautical -->
-            <div id="VesonItem" class="col-md-4 portfolioItem" data-toggle="modal" data-target=".modal1">
+            <a href="work/veson.html"><div id="VesonItem" class="col-md-4 portfolioItem" data-toggle="modal" data-target=".modal1">
                 <div class="portfoliowords">
-                    <h1 class="white portfolioText "> Veson</h1>
-                    <p class="white "> UX/UI Design </p>
+                    <h4 id="bold"> Veson</h4>
+                    <p> UX/UI Design Co-Op </p>
                 </div>
-            </div>
-            <!-- Modal -->
-                <div class="modal fade modal1 modal-xlg" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" > 
-                    <br>
-                    <button id="singlebutton" class="btn btn-primary btn-small center-block" data-dismiss="modal">Close</button>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <h1 class="white"> Veson Nautical - UX/UI Designer Co-Op </h1><br>
-                        <p class="white"> <span style="font-weight: bold">Services: </span>Experience Design, Interface Design, User Testing <br><span style="font-weight: bold">Features:</span> Market Inbox, Veslink Form Designer, Veslink Advanced Maps, Veslink Onboard<br><br>As the lone User Experience and Interface Designer within Veson Nautical, I led the front-end design of an enterprise maritime software company’s transition to the web. As a result I was tasked with drawing up anything and everything design-related, from designing new features to enhancing the functionality, usability, and aesthetic of pre-existing ones. I collaborated directly with the product team, development team, and CEO to deliver detailed wireframes, polished mockups, and clickable prototypes - among a number of other deliverables - to drive customer acquisition and retention, and was ultimately able to make a direct impact on the majority of their web design. <br><br> www.veson.com</p>
-                        <img class="xlModalImage img-responsive" src="img/veson/biggercover.png"> <br>
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImage img-responsive" src="img/veson/3form.png"> <br>
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImage img-responsive" src="img/veson/2maps.png"> <br>
-                        <button id="singlebutton" class="btn btn-primary btn-small center-block" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
+            </div></a>
         <!-- NeuCool -->
-            <div id="NeuCoolItem" class="col-md-4 portfolioItem" data-toggle="modal" data-target=".modal5">
+            <a href="work/neucool.html"><div id="NeuCoolItem" class="col-md-4 portfolioItem" data-toggle="modal" data-target=".modal5">
                 <div class="portfoliowords">
-                    <h1 class="white portfolioText "> NEUCool</h1>
-                    <p class="white "> UX/UI Design </p>
+                    <h4 id="bold"> NEUCool</h4>
+                    <p> UX/UI Design </p>
                 </div>
-            </div>
-            <!-- Modal -->
-                <div class="modal fade modal5 modal-xlg" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" > 
-                    <br>
-                    <button id="singlebutton" class="btn btn-primary btn-small center-block" data-dismiss="modal">Close</button>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <h1 class="white"> NEU COOL</h1><br>
-                        <p class="white"> <span style="font-weight: bold">Services: </span>Experience Design, Mobile Interface Design
-                                <br><br>For our final Design Process, Context and Systems project, my team and I chose to improve the fundamental application structure that Northeastern University students use to apply to Co-Ops. I chose to design a mobile interface to bring our user experience modifications to life and streamline the convoluted Co-Op application processes used throughout Northeastern University.<br><br>
-                                <span style="font-weight: bold">The Old: </span> After conducting basic research and student surveys, we discovered that each college within Northeastern utilized a different application structure for Co-Op jobs, as seen in the effort charts above. These discrepancies created considerable confusion for dual-major students, as well those students looking to apply to Co-Ops not directly related to their major or college. On the interface side, we observed an unnecessarily complicated user-flow of viewing and rating job prospects in myNEU Cool. With five slightly different bins in which students could view jobs, including “All Jobs,” “Very Interested,” “Moderately Interested,”Not Very Interested,” “Do Not Apply,” and “Not Selected”, there was a great deal of redundancy and ample room for improvement.<br><br>
-                                <span style="font-weight: bold">The New: </span> We adopted the current College of Computer and Information Science model as the model application process for students. Rather than confuse students with differing levels of interest, we created three bins of jobs on the interface side: “Available,” “Interested,” and “Archived", the latter of which would be designated as jobs of no interest to be removed from the general listing of jobs. Users of our app would be able swipe individual jobs to mark interested or archive (see next page), batch select multiple jobs to mark interested or archived (see next page), and click on specific jobs to view the details and mark interested or archive.</p>
-                        <img class="xlModalImage img-responsive" src="img/principlesproject/biggercover.png"> <br>
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImage img-responsive" src="img/principlesproject/2sidebyside.png"> <br>
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImage img-responsive" src="img/principlesproject/3experience.png"> <br>
-                        <button id="singlebutton" class="btn btn-primary btn-small center-block" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <!-- Foodler -->
-                <div id="FoodlerItem" class="col-md-4 col-md-offset-4 portfolioItem" data-toggle="modal" data-target=".modal7">
-                    <div class="portfoliowords">
-                        <h1 class="white portfolioText "> Foodler</h1>
-                        <p class="white "> Product Design Interview Exercise </p>
-                    </div>
-                </div>
-                <!-- Modal -->
-                    <div class="modal fade modal7 modal-xlg" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" > 
-                        <br>
-                        <button id="singlebutton" class="btn btn-primary btn-small center-block" data-dismiss="modal">Close</button>
-                        <div class="col-lg-6 col-lg-offset-3">
-                        <h1 class="white"> Foodler - Product Design</h1><br>
-                        <h2 class="white"> This is an abridged version. <a href="https://drive.google.com/open?id=0B-YID4ye2UFBb0xXTmNsdzRmeDQ" target="_newtab">Click here for the full slidedeck (PDF)</a><br><br></h2>
-                        <img class="xlModalImage img-responsive" src="img/foodler/coverbigger.png"> <br>
-                        <h2 class="white"> <span style="font-weight: bold">Objective:</span> Rapid design process of an existing high-traffic web app to showcase my design thinking and style. NOTE: This was an interview exercise for another company. I have not been employed by Foodler nor completed this exercise while interviewing for Foodler.</h2><br><br><br>
-                    </div>
-                    
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImage img-responsive" src="img/foodler/cover.png"> <br> 
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImage img-responsive" src="img/foodler/1.png"> <br> 
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImage img-responsive" src="img/foodler/2.png"> <br> 
-                    </div>
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImage img-responsive" src="img/foodler/3.png"> <br> 
-                    </div>
-                    
-                    <div class="col-lg-6 col-lg-offset-3">
-                        <img class="xlModalImage img-responsive" src="img/foodler/4.png"> <br>
-                        <button id="singlebutton" class="btn btn-primary btn-small center-block" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
+            </div></a>
         </div>
     </div>
-
-
-
-
 
 
     <!-- Footer -->
@@ -337,23 +137,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 servicesCard">
-                    <img class="avatar" src="img/icons/avatar.png"> 
-                    <h2 class="black"> I'm an experience designer at heart. With over three years of experience, I'm capable of delivering any and <span class="bluebold">all product design artifacts</span> - from early <span class="bluebold">user research</span> reports and <span class="bluebold">scenarios</span> to fully interactive visual <span class="bluebold">prototypes</span>. Let's build something together!
+                    <p> Ready to make things happen? </p>
+                    <h3> <a href="mailto:timwebber01@gmail.com">Shoot me an email</a></h3>
+                    <p> or</p>
+                    <h2> <a href="https://drive.google.com/open?id=0B-YID4ye2UFBMkVieC1FWXdOQzA" target="_blank">Grab a resume </a></h2>
                 </div>
-            </div>
-            <br><br>
-            <div id="resume" class="row">
-                    <div class="col-xs-12 text-center">
-                        <a href="https://drive.google.com/open?id=0B-YID4ye2UFBMkVieC1FWXdOQzA" target="_blank">
-                        <button id="singlebutton" class="btn btn-primary center-block">
-                            Take a resume
-                        </button></a>
-                    </div>
-                </div>
-            <h2 class="center-block white"> or </p>
-            <div id="hitmeupbutton" class="col-xs-12 text-center">
-                        <button class="btn btn-primary center-block"><a href="mailto:timwebber01@gmail.com">Hit me up!</a>
-                        </button>
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -398,7 +186,7 @@
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.mobile.custom.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <!--<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
     
 
     <!-- Bootstrap Core JavaScript -->
